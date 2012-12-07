@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.email         = `git log --raw | grep Author: | awk -F ': | <|>' '{ print $3 }' | sort | uniq`.split("\n")
   gem.description   = %q{Send passive notifications to Nagios Service Check Acceptor (NSCA).}
   gem.summary       = %q{NSCA Client}
-  gem.homepage      = "http://felipecvo.github.com/nsca-client"
+  gem.homepage      = "https://github.com/felipecvo/nsca-client"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

@@ -11,6 +11,7 @@ Usage:
 ------
 
 ```ruby
+require "nsca/client"
 NSCA::Client.servers << NSCA::Client::RemoteServer.new(:host => '172.0.0.1')
 service = NSCA::Client::Service.new(:name => 'TestMessage')
 NSCA::Client.critical service
